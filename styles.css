@@ -40,6 +40,9 @@ nav {
     100% { box-shadow: 0 0 0px #ffcc00; }
   }
 
+h2 {
+   margin-top: 100px;
+}
 p {
    /*border: 1px solid black;*/
    margin: 5px;
