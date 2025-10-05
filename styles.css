@@ -1,52 +1,65 @@
-body {
-   background-color: #deebf7;
-   font-family: sans-serif;
-   scroll-behavior: smooth;
-}
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #111;
-    color: white;
-    padding: 10px 20px;
-    z-index: 1000;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 0.9rem;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Raleway:wght@300;600&display=swap');
 
-  nav a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: 0.3s;
-  }
+    body {
+      margin: 0;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      font-family: 'Crimson Pro', serif;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
 
-  nav a:hover {
-    text-shadow: 0 0 8px #ffcc00, 0 0 16px #ffcc00;
-  }
+    header {
+      background: rgba(20, 20, 20, 0.8);
+      backdrop-filter: blur(6px);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
-  /* Glow für aktuell angeklicktes Kapitel */
- /* :target {
-    animation: glow 1s ease-in-out;
-    background-color: rgba(255, 165, 0, 0.1);
-  }
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: color 0.3s ease;
+    }
 
-  @keyframes glow {
-    0% { box-shadow: 0 0 0px #ffcc00; }
-    50% { box-shadow: 0 0 15px #ffcc00; }
-    100% { box-shadow: 0 0 0px #ffcc00; }
-  }*/
-section {
-    padding: 80px 20px 40px 20px; /* Platz für fixe Nav */
-    min-height: 100vh;
-}
-h2 {
-   margin-top: 5px;
-}
+    nav a:hover {
+      color: #ffcc88;
+    }
+
+    section {
+      padding: 100px 10% 120px 10%;
+      max-width: 900px;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    h1, h2 {
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #ffcc88;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
 p {
    /*border: 1px solid black;*/
    margin: 5px;
