@@ -41,7 +41,7 @@ nav {
     100% { box-shadow: 0 0 0px #ffcc00; }
   }*/
 section {
-    padding: 80px 20px 40px 20px; /* Platz für fixe Nav */
+    padding: 60px 20px 40px 20px; /* Platz für fixe Nav */
     min-height: 100vh;
 }
 h2 {
