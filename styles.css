@@ -8,7 +8,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: navy;
+    background: #111;
     color: white;
     padding: 10px 20px;
     z-index: 1000;
@@ -41,11 +41,11 @@ nav {
     100% { box-shadow: 0 0 0px #ffcc00; }
   }*/
 section {
-    padding: 60px 20px 40px 20px; /* Platz für fixe Nav */
+    padding: 80px 20px 40px 20px; /* Platz für fixe Nav */
     min-height: 100vh;
 }
 h2 {
-   margin-top: 0;
+   margin-top: 5px;
 }
 p {
    /*border: 1px solid black;*/
