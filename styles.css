@@ -7,7 +7,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;  height: 60px; /* Höhe festlegen, wichtig für Stern-Positionierung */
+    width: 100%;  height: 90px; /* Höhe festlegen, wichtig für Stern-Positionierung */
     overflow: hidden; /* Sterne bleiben innerhalb */
     background: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(6px);
