@@ -1,0 +1,105 @@
+body {
+   background-color: #deebf7;
+   font-family: sans-serif;
+   scroll-behavior: smooth;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  height: 70px; /* Höhe festlegen, wichtig für Stern-Positionierung */
+    overflow: hidden; /* Sterne bleiben innerhalb */
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px rgba(255,255,255,0.6);
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.star:hover {
+  opacity: 1 !important;
+  transform: scale(1.5);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
+  nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    text-shadow: 0 0 8px #ffcc00, 0 0 16px #ffcc00;
+  }
+
+section {
+    padding: 80px 20px 40px 20px; /* Platz für fixe Nav */
+    min-height: 100vh;
+}
+
+h2 {
+   margin-top: 10px;
+}
+
+p {
+   margin: 5px;
+   padding: 5px;
+   font-size: 0.85rem;
+}
+blockquote {
+   font-size: 0.88rem;
+}
+.sm {
+   font-size: 0.75rem;
+}
+@media (min-width: 900px) {
+  nav {
+    height: 80px;
+    font-size: 1rem;
+    padding: 15px 40px;
+  }
+
+  nav a {
+    margin-right: 25px;
+    font-size: 1rem;
+  }
+
+  section {
+    padding-top: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
